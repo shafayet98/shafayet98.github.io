@@ -5,17 +5,12 @@
 #typed {
     font-size: 60px;
     font-weight: 500;
+    font-family: 'BioRhyme', serif;
+    letter-spacing: 1px;
 }
 
 #typed .name {
     color: #8ac9d4;
-}
-
-@media(max-width: 768px) {
-    #typed {
-        font-size: 30px;
-        font-weight: 500;
-    }
 }
 
 .connect {
@@ -66,6 +61,79 @@
     font-size: 22px;
 }
 
-.projects {
+.about {
+    margin-top: 30px;
     display: none;
+    font-family: 'Space Mono', monospace;
+}
+
+.about h2 {
+    text-decoration: underline;
+}
+
+.about p {
+    margin-top: 20px;
+}
+
+.about .interests {
+    font-weight: 900 !important;
+    color: #3c9bac;
+}
+
+.about p a:link,
+.about p a:visited {
+    color: #3c9bac;
+    text-decoration: underline;
+}
+
+.about p a:hover {
+    color: #8ac9d4;
+}
+
+.gtotherPages {
+    display: none;
+    margin-top: 40px;
+}
+
+.gtotherPages ul {
+    list-style-type: none;
+    padding-inline-start: 0px !important;
+}
+
+.gtotherPages ul li {
+    display: inline-block;
+    margin-right: 60px;
+    font-size: 30px;
+    font-family: 'Space Mono', monospace;
+}
+
+.gtotherPages ul li a:link,
+.gtotherPages ul li a:visited {
+    color: black;
+    text-decoration: underline;
+}
+
+.gtotherPages ul li a:hover {
+    color: #1c7f91;
+}
+
+
+/* at last mobile */
+
+@media(max-width: 768px) {
+    #typed {
+        font-size: 26px;
+        font-weight: 500;
+    }
+    .about h2 {
+        font-size: 24px !important;
+    }
+    .about p {
+        font-size: 14px;
+        text-align: justify;
+    }
+    .gtotherPages ul li {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
 }

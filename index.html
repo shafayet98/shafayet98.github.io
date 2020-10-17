@@ -14,15 +14,16 @@
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/87bbd3728d.js" crossorigin="anonymous"></script>
 
-    <!-- jquery -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
 
     <title>Shafayet</title>
 </head>
 
 <body>
 
-
+    <!-- intro -->
     <div class="container mainWrapper">
         <div class="row">
             <div class="col-sm-12">
@@ -35,22 +36,40 @@
                         <li class="line">
                             <div></div>
                         </li>
-                        <li><a href="#"><i class="fab fa-github"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://github.com/shafayet98"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://medium.com/@shafayet.islam.61"><i class="fab fa-medium"></i></a></li>
+                        <li><a href="https://www.instagram.com/becomingwhat/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/Shafayet0_0"><i class="fab fa-twitter"></i></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-    <!--  -->
-    <div class="container projects">
+
+
+    <!-- about -->
+    <div class="container about">
         <div class="row">
             <div class="col-sm-6">
-
+                <h2>About</h2>
+                <p>
+                    The idea of designing and developing softwares that solves real life problem fascinates me the most. My area of interests are <strong class="interests">web-technologies</strong>, <strong class="interests">machine leanrning</strong>                    and <strong class="interests">deep learning</strong>. Besides programming, I love playing guitar and making new
+                    <a href="https://soundcloud.com/shafayet_098">music</a> with a mug full of coffee.
+                </p>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6"></div>
+        </div>
+    </div>
 
+    <!-- other stuff -->
+    <div class="container gtotherPages">
+        <div class="row">
+            <div class="col-sm-12">
+                <ul>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Articles/Blogs</a></li>
+                    <li><a href="#">Accomplishments</a></li>
+                </ul>
             </div>
         </div>
     </div>
@@ -80,8 +99,11 @@
         $(document).ready(function() {
             setTimeout(function() {
                 $('.connect').fadeIn(3000);
-                $(".projects").fadeIn(3000);
+                $(".about").fadeIn(3000);
             }, 2700);
+            setTimeout(function() {
+                $(".gtotherPages").fadeIn(3000);
+            }, 3200);
 
         })
     </script>
