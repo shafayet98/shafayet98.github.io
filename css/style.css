@@ -215,3 +215,61 @@
 .articles .card .card-text {
     color: rgb(82, 80, 80);
 }
+
+
+/* projects.html */
+
+#project_1 {
+    margin-top: 120px;
+}
+
+.projects {
+    margin-top: 80px;
+}
+
+.projects h3 {
+    font-family: 'BioRhyme', serif;
+    text-decoration: underline;
+}
+
+.projects .card-columns {
+    margin-top: 60px;
+}
+
+.projects .card {
+    border: 1px solid black;
+    font-family: 'Space Mono', monospace;
+}
+
+.projects .card:hover {
+    border: 1px solid #1c7f91;
+    cursor: pointer;
+    background: #8ac9d4;
+}
+
+.projects .card .card-header {
+    background: white !important;
+    border-bottom: 1px solid black;
+    font-weight: bolder;
+}
+
+.projects .card .card-text {
+    margin-top: 10px;
+}
+
+.projects .btn-outline-dark:hover {
+    background: white;
+    color: black;
+}
+
+@media(max-width: 768px) {
+    .card-columns {
+        column-count: 2 !important;
+    }
+}
+
+@media(max-width: 678px) {
+    .card-columns {
+        column-count: 1 !important;
+    }
+}
