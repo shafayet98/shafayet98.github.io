@@ -62,7 +62,7 @@
 }
 
 .about {
-    margin-top: 30px;
+    margin-top: 60px;
     display: none;
     font-family: 'Space Mono', monospace;
 }
@@ -73,6 +73,7 @@
 
 .about p {
     margin-top: 20px;
+    text-align: justify;
 }
 
 .about .interests {
@@ -90,9 +91,23 @@
     color: #8ac9d4;
 }
 
+.skills ul {
+    margin-top: 10px;
+    padding-inline-start: 20px !important;
+}
+
+.skills h6 {
+    color: #1c7f91;
+}
+
+.skills .col_1,
+.skills .col_2 {
+    padding-top: 10px;
+}
+
 .gtotherPages {
     display: none;
-    margin-top: 40px;
+    margin-top: 70px;
 }
 
 .gtotherPages ul {
@@ -135,5 +150,14 @@
     .gtotherPages ul li {
         font-size: 24px;
         margin-bottom: 15px;
+    }
+}
+
+@media(max-width:678px) {
+    .skills {
+        margin-top: 30px;
+    }
+    .gtotherPages {
+        margin-top: 40px;
     }
 }
