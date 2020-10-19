@@ -29,6 +29,11 @@
     margin-top: 15px;
     margin-bottom: 15px;
     margin-right: 20px;
+    transition: transform .2s;
+}
+
+.connect ul li:hover {
+    transform: scale(1.5);
 }
 
 .line div {
@@ -41,7 +46,7 @@
 
 @keyframes slideInFromLeft {
     0% {
-        transform: translateX(-100%);
+        transform: translateX(-150%);
     }
     100% {
         transform: translateX(0);
@@ -55,6 +60,10 @@
 .connect ul li a:link,
 .connect ul li a:visited {
     color: black;
+}
+
+.connect ul li a:hover {
+    color: #1c7f91;
 }
 
 .connect ul li i {
@@ -244,7 +253,7 @@
 .projects .card:hover {
     border: 1px solid #1c7f91;
     cursor: pointer;
-    background: #8ac9d4;
+    background: #a0dee9;
 }
 
 .projects .card .card-header {
@@ -271,5 +280,54 @@
 @media(max-width: 678px) {
     .card-columns {
         column-count: 1 !important;
+    }
+}
+
+
+/* accoms.html */
+
+.accoms {
+    margin-top: 120px;
+    font-family: 'Space Mono', monospace;
+}
+
+.accoms h3 {
+    text-decoration: underline;
+    font-family: 'BioRhyme', serif;
+}
+
+.accoms ol {
+    margin-top: 30px;
+}
+
+.accoms ol li {
+    margin-bottom: 20px;
+}
+
+.accoms ol li a:link,
+.accoms ol li a:visited {
+    color: #000;
+    font-size: 18px;
+}
+
+.accoms ol li a:hover {
+    color: #1c7f91;
+}
+
+.accoms p {
+    margin-top: 50px;
+    color: #1c7f91;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+@media(max-width: 678px) {
+    .accoms {
+        margin-top: 60px;
+        font-family: 'Space Mono', monospace;
+    }
+    .accoms ol li a:link,
+    .accoms ol li a:visited {
+        font-size: 14px;
     }
 }
