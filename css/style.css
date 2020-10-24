@@ -271,6 +271,10 @@
     color: black;
 }
 
+.sidebyside {
+    display: block;
+}
+
 @media(max-width: 768px) {
     .card-columns {
         column-count: 2 !important;
@@ -330,4 +334,35 @@
     .accoms ol li a:visited {
         font-size: 14px;
     }
+}
+
+
+/* general details.html */
+
+.details {
+    margin-top: 100px;
+}
+
+.details h3,
+.details h5 {
+    text-decoration: underline;
+    font-family: 'BioRhyme', serif;
+}
+
+.details p {
+    font-family: 'Space Mono', monospace;
+}
+
+.details .description {
+    text-align: justify;
+}
+
+.details .techstacks {
+    font-family: 'Space Mono', monospace;
+    text-align: normal !important;
+}
+
+.techstacks ul {
+    margin-top: 20px;
+    padding-inline-start: 20px !important;
 }
