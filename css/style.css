@@ -189,8 +189,19 @@
     font-family: 'Space Mono', monospace;
 }
 
-.goHome .containsLink {
-    display: grid;
+
+/* .goHome .containsLink {
+    display: block;
+} */
+
+.goHome .containsLink ul {
+    padding-inline-start: 0px !important;
+}
+
+.goHome .containsLink ul li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
 .goHome a:link,
@@ -199,6 +210,10 @@
     text-decoration: underline;
     font-weight: bolder;
     text-align: right;
+}
+
+.goHome a:hover {
+    color: #1c7f91;
 }
 
 .articles {
@@ -233,7 +248,7 @@
 }
 
 .projects {
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .projects h3 {
