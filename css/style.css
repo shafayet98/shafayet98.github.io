@@ -1,5 +1,5 @@
 .mainWrapper {
-    margin-top: 120px;
+    margin-top: 50px;
 }
 
 #typed {
@@ -380,4 +380,12 @@
 .techstacks ul {
     margin-top: 20px;
     padding-inline-start: 20px !important;
+}
+
+
+
+
+
+.recent_projects{
+    font-family: 'Space Mono', monospace;
 }
