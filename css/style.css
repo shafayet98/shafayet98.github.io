@@ -1,0 +1,12 @@
+.social-link {
+    transition: all 0.2s ease;
+}
+
+.social-link:hover {
+    text-decoration: underline !important;
+    opacity: 0.8;
+}
+
+html {
+    scroll-behavior: smooth;
+}
