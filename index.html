@@ -160,6 +160,47 @@
     <div class="container mt-5">
         <div class="row justify-content-center">
 
+            <!-- skeleton -->
+            <div class="col-md-6 col-lg-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="https://github.com/shafayet98/KB_Skeleton">
+                                Skeleton</a>
+                        </h5>
+                        <p class="card-subtitle mb-2 pt-2">
+                            A full-stack RAG system for managing document knowledge bases. Upload files to S3, automatically index them in AWS Bedrock for semantic search and AI-powered Q&A with source citations. Features drag-and-drop uploads, document versioning with diff viewer, and chat-with-your-documents via Bedrock RetrieveAndGenerate.
+                        </p>
+
+                        <div class="githublink mt-2">
+                            <a style="text-decoration: underline;" href="https://github.com/shafayet98/KB_Skeleton"><b>View
+                                    Project On Github</b></a>
+                        </div>
+
+                        <div class="topic_about mt-2">
+                            <b>Tech Stack:</b>
+                            <!-- Tags -->
+                            <div class="mb-3 mt-2">
+                                <span class="badge px-2 py-1 mr-1"
+                                    style="background-color: #e3f2fd; color: #1565c0; font-size: 12px;">Next.js</span>
+                                <span class="badge px-2 py-1 mr-1"
+                                    style="background-color: #f3e5f5; color: #6a1b9a; font-size: 12px;">AWS Lambda</span>
+                                <span class="badge px-2 py-1 mr-1"
+                                    style="background-color: #e8f5e9; color: #2e7d32; font-size: 12px;">AWS Bedrock</span>
+                                <span class="badge px-2 py-1 mr-1"
+                                    style="background-color: #fff3e0; color: #e65100; font-size: 12px;">Terraform</span>
+                                <span class="badge px-2 py-1 mr-1"
+                                    style="background-color: #fce4ec; color: #c2185b; font-size: 12px;">S3</span>
+                                <span class="badge px-2 py-1 mr-1"
+                                    style="background-color: #e0f2f1; color: #00796b; font-size: 12px;">DynamoDB</span>
+                                <span class="badge px-2 py-1 mr-1"
+                                    style="background-color: #e3f2fd; color: #1565c0; font-size: 12px;">Claude</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- trace agent -->
             <div class="col-md-6 col-lg-6 mb-4">
                 <div class="card h-100">
@@ -638,6 +679,60 @@
     </div>
 
     <div class="container mt-3">
+        <div class="row">
+            <div class="col-sm-3">
+                <h4><b>InfoSpark</b></h4>
+                <p>Software Engineer<br> Adelaide, South Australia<br> April 2026 - Present</p>
+            </div>
+            <div class="col-sm-9">
+                <p>
+                    InfoSpark is an award-winning Platinum Smartsheet Partner that provides consulting, custom integrations, add-ons, and tailored solutions to help organisations streamline workflows, automate processes, and manage projects using the Smartsheet platform.
+                </p>
+
+                <p><b>Key Contributions</b></p>
+                <ul>
+                    <li><b>Prosheet Control, Core Platform Engineering:</b> Maintained backend services for Prosheet, a Smartsheet governance and environment-intelligence SaaS product, on a serverless AWS stack (Lambda, DynamoDB, Fargate, Sync-Mechanism).</li>
+                    <li><b>Prosheet AI Chat Agent:</b> Designed and shipped an in-product AI chat agent that answers customer questions about their Smartsheet environment, replacing static help content with grounded, account-aware responses.
+                        <ul>
+                            <li>Implemented a tool-calling layer allowing the agent to query live account, subscription, and usage data at request time rather than relying on pre-written answers.</li>
+                            <li>Integrated a retrieval-augmented knowledge base so product and support documentation grounds every response, reducing hallucinated answers and cutting escalations to human support by 40%.</li>
+                            <li>Built an automatic Slack escalation path that routes unanswerable queries to the support team with full conversation context, ensuring no customer question is silently dropped and creating a feedback loop for closing knowledge base gaps.</li>
+                        </ul>
+                    </li>
+                    <li><b>Autonomous CloudWatch to GitHub Issue Pipeline:</b> Engineered an automated incident-triage system where CloudWatch alarms publish errors to Slack and an AI service running on EC2 analyses each stack trace against the current codebase, then opens an enriched GitHub issue with the suspected root cause and affected files, reducing average triage time from ~45 minutes to under 5.</li>
+                    <li><b>Scheduled AI Agent Loops for Issue Triage:</b> Implemented a scheduled Claude-driven agent loop that reviews open GitHub issues daily, deduplicates and re-prioritises them, and surfaces regressions to the engineering team without manual intervention.</li>
+                    <li><b>Multi-Tenant Knowledge Base Management Platform:</b> Architected a self-service knowledge base platform allowing each department to create and manage its own KB, with a Lambda-based ingestion pipeline that chunks and embeds documents via AWS Bedrock and stores vectors in PostgreSQL/pgvector for semantic retrieval.</li>
+                </ul>
+
+                    <!-- Technologies Used -->
+                    <div class="mt-4">
+                        <h5><b>Technologies Used</b></h5>
+                        <div class="d-flex flex-wrap mt-3">
+                            <span class="badge px-3 py-2 mr-2 mb-2"
+                                style="background-color: #e3f2fd; color: #1565c0; font-size: 14px; font-weight: normal;">AWS Lambda</span>
+                            <span class="badge px-3 py-2 mr-2 mb-2"
+                                style="background-color: #e0f2f1; color: #00796b; font-size: 14px; font-weight: normal;">DynamoDB</span>
+                            <span class="badge px-3 py-2 mr-2 mb-2"
+                                style="background-color: #f3e5f5; color: #6a1b9a; font-size: 14px; font-weight: normal;">Fargate</span>
+                            <span class="badge px-3 py-2 mr-2 mb-2"
+                                style="background-color: #fff3e0; color: #e65100; font-size: 14px; font-weight: normal;">AWS Bedrock</span>
+                            <span class="badge px-3 py-2 mr-2 mb-2"
+                                style="background-color: #fce4ec; color: #c2185b; font-size: 14px; font-weight: normal;">Claude</span>
+                            <span class="badge px-3 py-2 mr-2 mb-2"
+                                style="background-color: #e8f5e9; color: #2e7d32; font-size: 14px; font-weight: normal;">PostgreSQL/pgvector</span>
+                            <span class="badge px-3 py-2 mr-2 mb-2"
+                                style="background-color: #e3f2fd; color: #1565c0; font-size: 14px; font-weight: normal;">Smartsheet API</span>
+                            <span class="badge px-3 py-2 mr-2 mb-2"
+                                style="background-color: #fff3e0; color: #e65100; font-size: 14px; font-weight: normal;">EC2</span>
+                            <span class="badge px-3 py-2 mr-2 mb-2"
+                                style="background-color: #e0f2f1; color: #00796b; font-size: 14px; font-weight: normal;">CloudWatch</span>
+                            <span class="badge px-3 py-2 mr-2 mb-2"
+                                style="background-color: #f3e5f5; color: #6a1b9a; font-size: 14px; font-weight: normal;">Slack API</span>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <hr>
         <div class="row">
             <div class="col-sm-3">
                 <h4><b>Abstrata</b></h4>
